@@ -1,7 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> ca7b4999fd23fb9091c44a074db8ec568bc358fd
+=======
+Arpeggio==1.10.1
+>>>>>>> b2fb37da9b572cefad166d213c63fe72c7b92d7e
 cycler==0.10.0
 kiwisolver==1.3.1
 llvmlite==0.34.0
@@ -9,15 +13,28 @@ matplotlib==3.3.3
 mpmath==1.1.0
 numba==0.51.2
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 numpy==1.19.4
 >>>>>>> ca7b4999fd23fb9091c44a074db8ec568bc358fd
 Pillow==8.0.1
+=======
+numpy==1.19.4
+Pillow==8.0.1
+pyccel==1.0.0
+>>>>>>> b2fb37da9b572cefad166d213c63fe72c7b92d7e
 pyparsing==2.4.7
 python-dateutil==2.8.1
 six==1.15.0
 sympy==1.6.2
 <<<<<<< HEAD
+<<<<<<< HEAD
 numpy==1.19.4
 =======
 >>>>>>> ca7b4999fd23fb9091c44a074db8ec568bc358fd
+=======
+termcolor==1.1.0
+textX==2.3.0
+numpy==1.19.4
+
+>>>>>>> b2fb37da9b572cefad166d213c63fe72c7b92d7e
