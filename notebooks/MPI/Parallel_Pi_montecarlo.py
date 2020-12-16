@@ -5,7 +5,7 @@ COMM=MPI.COMM_WORLD
 rank=COMM.Get_rank()
 size=COMM.Get_size()
 t = time.time()
-nb=10000000
+nb=100000
 nbc=int(nb/size)+(size==(rank+1))*(nb%size)
 k=0
 print("I ",rank," will generate ", nbc)
