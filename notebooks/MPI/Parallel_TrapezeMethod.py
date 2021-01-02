@@ -16,13 +16,16 @@ xmax=3*np.pi/2
 xmin=0
 nbx = 1067
 dx=(xmax-xmin)/(nbx-1)
-nbi=int((nbx-1)/size)+(size==(rank+1))*((nbx-1)%size)
+nbi=int((nbx-1)/size)
+if (size==(rank+1)):
+	nbi=nbi+((nbx-1)%size)
 
 if rank==(size-1):
 	xmin = xmax-nbi*dx
 else:
-	xmin = xmin+rank*nbi*dx
 	xmax = xmin+(rank+1)*nbi*dx
+	xmin = xmin+rank*nbi*dx
+	
 
 x = np.linspace(xmin, xmax, nbi+1)
 y = np.cos(x)
@@ -32,3 +35,5 @@ integrale=COMM.reduce(integrale_c,op=MPI.SUM, root=0)
 if rank==0:
 	runtime=time.time()-t
 	print("integrale = " ,integrale, "in ",runtime," s")
+	
+	
